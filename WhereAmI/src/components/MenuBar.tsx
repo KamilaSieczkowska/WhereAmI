@@ -12,7 +12,8 @@ const styles = (theme: Theme) =>
             padding: theme.spacing(1),
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'center'
+            alignItems: 'center',
+            fontSize: '20px'
         },
         title: {
             marginLeft: theme.spacing(8),
@@ -24,6 +25,8 @@ const styles = (theme: Theme) =>
         },
         availability: {
             marginRight: theme.spacing(12),
+            display: 'flex',
+            alignItems: 'center'
         },
         availabilityTag: {
             display: 'inline-block',
@@ -51,9 +54,9 @@ class MenuBar extends Component<IMenuBarProps> {
                     Monday, April 22
                 </div>
                 <div className={classes.availability} >
-                    <Tag className={classes.availabilityTag} text={`${this.props.availablePeopleCount}`} color='green' />
-                    <Tag className={classes.availabilityTag} text={`${this.props.remotePeopleCount}`} color='blue'/>
-                    <Tag className={classes.availabilityTag} text={`${this.props.absentPeopleCount}`} color='red'/>
+                    <Tag className={classes.availabilityTag} text={`${this.props.availablePeopleCount}`} color='#4bd991' /> 
+                    <Tag className={classes.availabilityTag} text={`${this.props.remotePeopleCount}`} color='#3da7dd'/>
+                    <Tag className={classes.availabilityTag} text={`${this.props.absentPeopleCount}`} color='#ff2d54'/>
                 </div>
             </Paper>
         );

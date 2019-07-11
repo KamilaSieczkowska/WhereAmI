@@ -10,7 +10,7 @@ import User from '../model/User';
 const styles = (theme: Theme) =>
     createStyles({
         card: {
-            padding: theme.spacing(1)
+            padding: theme.spacing(.5)
         },
         avatarRing: {
             width: 60,
@@ -31,7 +31,8 @@ const styles = (theme: Theme) =>
             alignItems: 'center',
             flexDirection: 'row',
             backgroundColor: '#fff',
-            borderRadius: 3
+            borderRadius: 4,
+            boxShadow: '0px 0px 10px 2px #d7e5f7'
         },
         statusDot: {
             marginLeft: 20 + theme.spacing(2)
@@ -91,9 +92,9 @@ class UserStatusItem extends Component<IUserStatusItemProps> {
     }
 
     private getStatusColor = (status: UserStatus): string => {
-        if (status === UserStatus.Office) return 'green';
-        if (status === UserStatus.Remote) return 'blue';
-        if (status === UserStatus.Absent) return 'red';
+        if (status === UserStatus.Office) return '#4bd991'; //green
+        if (status === UserStatus.Remote) return '#3da7dd'; //blue
+        if (status === UserStatus.Absent) return '#ff2d54'; //red
         return 'gray';
     }
 }

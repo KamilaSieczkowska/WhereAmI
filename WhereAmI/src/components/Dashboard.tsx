@@ -16,8 +16,9 @@ const styles = (theme: Theme) =>
             width: '100%',
             flexGrow: 1,
             paddingTop: theme.spacing(3),
-            paddingLeft: theme.spacing(7),
-            paddingRight: theme.spacing(7)
+            paddingLeft: theme.spacing(4),
+            paddingRight: theme.spacing(4),
+            margin: 0
         },
         statusColumn: {
             // TODO make it take up entire vertical space

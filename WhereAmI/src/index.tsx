@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
+import './styles/index.scss';
 import Dashboard from './components/Dashboard';
 import UserSatusController from './controllers/UserStatusController';
 import * as serviceWorker from './serviceWorker';
